@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>REEF</title>
+		<link rel="stylesheet" href="static/style.css">
+	</head>
+	<body><main>
+		<h1>ReeF &mdash; <u>R</u>egular <u>e</u>xpression <u>e</u>asy <u>F</u>inder</h1>
+		<form>
+		<div id="app-area">
+			<h2>正規表現チェッカー</h2>
+			<label for="regex">正規表現：</label>
+			<input type="text" id="regex" name="regex" placeholder="正規表現">
+			<br>
+			<label for="input">文字列：</label>
+			<textarea id="input" name="input" placeholder="マッチングを行う文字列"></textarea>
+			<br>
+			<button type="button" id="match-btn">マッチング</button>
+			<div id="output"></div>
+			<script src="static/app.js"></script>
+		</div>
+		<div id="sample">
+			<h2>正規表現チートシート</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>正規表現</th>
+						<th>説明</th>
+					</tr>
+				</thead>
+				<tbody>
+  					<tr>
+						<td>/^Hello/</td>
+						<td>文字列が "Hello" で始まるかを検査</td>
+					</tr>
+					<tr>
+						<td>/[a-z]+/</td>
+						<td>小文字のアルファベットが 1 文字以上連続するかを検査</td>
+					</tr>
+					<tr>
+						<td>/[0-9]{3}/</td>
+						<td>3 桁の数字を検査</td>
+					</tr>
+					<!-- 他にも必要な正規表現があれば、適宜追加してください -->
+				</tbody>
+			</table>
+		</div>
+		</form>
+		</main></body>
+</html>
